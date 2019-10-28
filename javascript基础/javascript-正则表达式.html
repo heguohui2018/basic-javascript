@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p id="demo1">This is history book</p>
+    <p id="demo2">This is history book</p>
+
+    <button onclick="myFunction1()">点击这里</button>
+    <button onclick="myFunction2()">点击这里</button>
+    <script>
+        function myFunction1(){
+            var str ="my Document"
+            var n = str.search(/Document/i);
+            document.getElementById("demo1").innerHTML = n;
+        }
+
+        function myFunction2(){
+            var str ="my Document"
+            var n = str.search("Document");
+            document.getElementById("demo2").innerHTML = n;
+
+        }
+    </script>
+</body>
+</html>

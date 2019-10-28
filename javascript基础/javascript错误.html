@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <input type="button" value="查看消息" onclick="message()">
+    <script>
+        var txt = "";
+        function message(){
+            try {
+                adddlert("welcome guest!");
+            }
+            catch( err ){
+                txt ="本页有一个错误,\n\n";
+                txt+="错误描述:"+err.massage+"\n\n";
+                txt+="点击确定继续, \n\n";
+                alert(txt);
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

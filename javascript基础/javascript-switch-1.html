@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+    <p>点击下面的按钮会显示今天的日期信息</p>
+    <button onclick="myFunction()">点击这里</button>
+    <p id="demo"></p>
+    <!-- default 关键字是使用默认值，如果都不符合条件时 -->
+    <script>
+        function myFunction(){
+            var x = 0;
+            var d = new Date().getDay();
+            switch(d)
+            {
+                case 6:x = "今天星期六";
+                break;
+                case 0:x = "今天是星期天";
+                break;
+                default:x = "期待周末";
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>
