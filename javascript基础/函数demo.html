@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calling Function</title>
+    <script>
+        function buttonReport(buttonId , buttonName , buttonValue) {
+            // information about the id of the button
+            var userMessage1 = "Button id :" + "buttonId"+"\n"
+            // then about of button name
+            var userMessage2 = "Button name :" + "buttonName"+"\n"
+            // and the button value
+            var userMessage3 = "Button value :" + "buttonValue"+"\n"
+            // alert the user
+            alert(userMessage1+userMessage2+userMessage3)
+        }
+    
+    </script>
+</head>
+<body>
+    <input type="button" id="id1" name="left hand button" value="left" onclick="buttonReport(this.id, this.name, this.value)">
+    <input type="button" id="id2" name="center button" value="center" onclick="buttonReport(this.id, this.name, this.value)">
+    <input type="button" id="id3" name="right hand button" value="right" onclick="buttonReport(this.id, this.name, this.value)">
+    
+</body>
+</html>
