@@ -33,6 +33,27 @@
     </style>
 
     <script>
+        // 密码强度分为4级
+        function matchlevel(password){
+            if (password.length < 6) {
+                return 0;
+            }
+            if (password.length >= 6 && password.length < 10) {
+                return 1;
+            }
+            if (password.length >= 10 && password.length < 16) {
+                return 1;
+            }
+            if (password.length >= 16){
+                return 4;
+            }
+        }
+
+        window.onload = function() {
+            tipColor = ['red','yellow','orange','green'];
+            // 密码强度提示颜色
+
+        }
 
     
     </script>
