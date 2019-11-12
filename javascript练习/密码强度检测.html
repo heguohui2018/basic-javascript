@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>密码强度检测</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .password {
+            display: inline-block;
+            padding: 5px 20px;
+            border: 1px solid #000;
+            color: #333;
+        }
+
+        .password > p {
+            font-size: 12px;
+            color: pink;
+        }
+
+        .tips {
+            display: inline-block;
+            padding: 3px 8px;
+            border: 1px solid #000;
+            margin-right: 10px;
+        }
+
+    </style>
+
+    <script>
+        // 密码强度分为4级
+        function matchlevel(password){
+            if (password.length < 6) {
+                return 0;
+            }
+            if (password.length >= 6 && password.length < 10) {
+                return 1;
+            }
+            if (password.length >= 10 && password.length < 16) {
+                return 1;
+            }
+            if (password.length >= 16){
+                return 4;
+            }
+        }
+
+        window.onload = function() {
+            tipColor = ['red','yellow','orange','green'];
+            // 密码强度提示颜色
+
+        }
+
+    
+    </script>
+
+</head>
+<body>
+    <div class="password">
+        <input type="password" name="密码" >
+        密码：
+        <p>
+            密码强度：
+            <span class="tips" level="0" ></span>
+            <span class="tips" level="1"></span>
+            <span class="tips" level="2"></span>
+            <span class="tips" level="3"></span>
+        </p>
+    </div>
+    
+</body>
+</html>
