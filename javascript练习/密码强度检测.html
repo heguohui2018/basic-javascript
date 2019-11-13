@@ -52,10 +52,28 @@
         window.onload = function() {
             tipColor = ['red','yellow','orange','green'];
             // 密码强度提示颜色
+            
+            let tipElement = document.getElementsByClassName("tips");
+            // 获取提示元素
 
+            document.getElementsByTagName("input")[0].onkeyup = function () {
+                // 在当前元素上释放键盘按键时会触发keyup事件.
+                let level = matchlevel(this.value);
+                if (this.value.length){
+                    for (let i = 0, elelen=tipElement.length;i<elelen;i++) {
+                        if (i <= level){
+                            tipElement[i].style.backgroundColor = tipColor[i];
+                        } else{
+                            tipElement.style.backgroundColor = '';
+                        }
+                    }
+                }else {
+                    for (var i = 0, eleLen = tipElement.length; i < eleLen; i++) {
+                        tipElement[i].style.backgroundColor = '';
+                    } 
+                }
+            }
         }
-
-    
     </script>
 
 </head>
