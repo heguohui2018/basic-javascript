@@ -19,10 +19,20 @@
         //     a--;
         // }
     
-        for(let i =0;i<3;i++){
-            alert(i)
-        }
+        // for(let i =0;i<3;i++){
+        //     alert(i)
+        // }
+        // for循环的结构：第一个是begin语句段，第二个位置是条件判断，第三个位置是step
         // 判断条件是否为真，如果为真，执行循环体，然后在执行step（下一步），这里的setp为i++
+        // 在循环中声明的变量称为“内连”变量
+
+        let sum = 0;
+        while(true) {
+            let value = +prompt("Enter a number",'');
+            if(value) break;
+            sum+ = value;
+        }
+        alert('Sum:'+sum)
     
     </script>
 </head>
