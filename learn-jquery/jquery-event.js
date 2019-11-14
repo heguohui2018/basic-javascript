@@ -48,7 +48,32 @@ $(document).ready(function() {
 
 	// .change()事件
 	// 改事件用于文本域以及select元素
-	$("input").change(function() {
-		$(this).css("background-color","red");
+	// $("input").change(function() {
+	// 	$(this).css("background-color","red");
+	// });
+
+
+	// .delegate()
+	// .slideToggle()事件，起到淡出效果,隐藏元素
+	$("div").delegate("p","click",function() {
+		$(this).slideToggle();
 	});
+	$("div").delegate("button","click",function() {
+		$("<p>这是一个段落").insertAfter("button");
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
