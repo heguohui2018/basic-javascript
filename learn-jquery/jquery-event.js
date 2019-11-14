@@ -38,7 +38,12 @@ $(document).ready(function() {
 	});
 	$("input").blur(function() {
 		$("input").css("background-color","yellow");
-	})
-
+	});
+	$(".button1").click(function() {
+		$("input").focus();
+	});
+	$(".button2").click(function() {
+		$("input").blur();
+	});
 
 });
