@@ -22,9 +22,8 @@ $(document).ready(function() {
 
 	// ..bind()事件用于绑定多个方法
 	$("button").bind({
-		click:function() {$("p").slideToggle();},
-		mouseover:function() {$("body").css{"background-color":"red"};},
-		mouseout:function() {$("body").css("background-color":"green");}
+		click:function(){$("p").slideToggle();},
+		mouseover:function(){$("body").css("background-color","red");},
+		mouseout:function(){$("body").css("background-color","green");}
 	});
-
 });
