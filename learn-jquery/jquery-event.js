@@ -21,6 +21,10 @@ $(document).ready(function() {
 	// });
 
 	// ..bind()事件用于绑定多个方法
+	// 总共绑定了三个事件，
+	// 一个是点击事件，
+	// 一个是鼠标移动到按钮上，改变背景颜色
+	// 一个是鼠标从按钮上移除，再次改变背景颜色
 	$("button").bind({
 		click:function(){$("p").slideToggle();},
 		mouseover:function(){$("body").css("background-color","red");},
