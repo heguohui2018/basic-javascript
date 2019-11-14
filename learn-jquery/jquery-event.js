@@ -55,13 +55,20 @@ $(document).ready(function() {
 
 	// .delegate()
 	// .slideToggle()事件，起到淡出效果,隐藏元素
-	$("div").delegate("p","click",function() {
+	// $("div").delegate("p","click",function() {
+	// 	$(this).slideToggle();
+	// });
+	// $("div").delegate("button","click",function() {
+	// 	$("<p>这是一个段落").insertAfter("button");
+	// });
+
+	// .off()事件是为移除通过.on()事件添加给元素的所有相关事件
+	$("p").on("click",function() {
 		$(this).slideToggle();
 	});
-	$("div").delegate("button","click",function() {
-		$("<p>这是一个段落").insertAfter("button");
-	});
-
+	$("button").click(function() {
+		$("p").off();
+	})
 
 
 
