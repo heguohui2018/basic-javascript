@@ -15,9 +15,16 @@ $(document).ready(function() {
 	// });
 
 	// .mouseenter()事件
-	$("button").mouseenter(function () { 
+	// $("button").mouseenter(function () { 
 
-		$(this).hide();
+	// 	$(this).hide();
+	// });
+
+	// ..bind()事件用于绑定多个方法
+	$("button").bind({
+		click:function() {$("p").slideToggle();},
+		mouseover:function() {$("body").css{"background-color":"red"};},
+		mouseout:function() {$("body").css("background-color":"green");}
 	});
 
-})
+});
