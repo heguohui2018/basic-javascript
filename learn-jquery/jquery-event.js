@@ -33,17 +33,22 @@ $(document).ready(function() {
 
 	// .focus()获得焦点时触发事件
 	// .blur()失去焦点触发事件
-	$("input").focus(function () {
-		$("input").css("background-color","orange");
-	});
-	$("input").blur(function() {
-		$("input").css("background-color","yellow");
-	});
-	$(".button1").click(function() {
-		$("input").focus();
-	});
-	$(".button2").click(function() {
-		$("input").blur();
-	});
+	// $("input").focus(function () {
+	// 	$("input").css("background-color","orange");
+	// });
+	// $("input").blur(function() {
+	// 	$("input").css("background-color","yellow");
+	// });
+	// $(".button1").click(function() {
+	// 	$("input").focus();
+	// });
+	// $(".button2").click(function() {
+	// 	$("input").blur();
+	// });
 
+	// .change()事件
+	// 改事件用于文本域以及select元素
+	$("input").change(function() {
+		$(this).css("background-color","red");
+	});
 });
