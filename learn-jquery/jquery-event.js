@@ -70,8 +70,11 @@ $(document).ready(function() {
 	// 	$("p").off();
 	// })
 
-	$("img").error(function() {
-		$("img").replaceWith("<p><b>图片未加载</b></p>");
-	});
+	// $("img").error(function() {
+	// 	$("img").replaceWith("<p><b>图片未加载</b></p>");
+	// });
+	// $("button").click(function() {
+	// 	$("img").error();
+	// });
 
 });
