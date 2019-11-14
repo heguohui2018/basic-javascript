@@ -63,24 +63,15 @@ $(document).ready(function() {
 	// });
 
 	// .off()事件是为移除通过.on()事件添加给元素的所有相关事件
-	$("p").on("click",function() {
-		$(this).slideToggle();
+	// $("p").on("click",function() {
+	// 	$(this).slideToggle();
+	// });
+	// $("button").click(function() {
+	// 	$("p").off();
+	// })
+
+	$("img").error(function() {
+		$("img").replaceWith("<p><b>图片未加载</b></p>");
 	});
-	$("button").click(function() {
-		$("p").off();
-	})
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
