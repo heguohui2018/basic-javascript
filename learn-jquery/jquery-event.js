@@ -9,10 +9,15 @@ $(document).ready(function() {
 	//
 	
 	// .dblclick()双击事件
-	$("button").dblclick(function () { 
+	// $("button").dblclick(function () { 
 
-		// this当前对象
+	// 	$(this).hide();
+	// });
+
+	// .mouseenter()事件
+	$("button").mouseenter(function () { 
+
 		$(this).hide();
-		// .hide()方法用于隐藏对象
 	});
+
 })
