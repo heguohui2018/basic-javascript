@@ -6,4 +6,13 @@
 
 a {
 	text-decoration: none;
+	color: pink;
 }
+
+
+a:hover {
+	cursor: pointer;	
+	color: #000;
+}
+
+
