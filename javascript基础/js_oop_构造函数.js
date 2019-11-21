@@ -57,8 +57,8 @@ function Car(Color ,Year, Make, User) {
 }
 var Car1 = new Car("red","2019","China","heguohui");
 
-var Caf1 = new Car("orange","2018","China","heguohui");
+var Car2 = new Car("orange","2018","China","heguohui");
 
-var Caf1 = new Car("pink","2018","China","heguohui");
+var Car3 = new Car("pink","2018","China","heguohui");
 
 Car1.setOdometer("wang");
