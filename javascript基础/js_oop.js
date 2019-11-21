@@ -15,6 +15,10 @@ myNewObject.showInfo=myFunc;
 // 调用对象的方法
 myNewObject.showInfo();
 
+// 在定义函数函数时this关键字，指代的是父对象，而这是的父对象是全局对象window，其并没有名为info的属性
+// 如果直接调用myFunc()函数会报错
+// 当把定义的函数赋给方法后，this指代的对象就变成了 myNewObject
+
 
 
 
