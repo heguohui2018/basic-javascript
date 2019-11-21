@@ -9,9 +9,9 @@ a {
 	color: pink;
 }
 
-
 a:hover {
-	cursor: pointer;	
 	color: yellow;
+	cursor: pointer;
+}
 
 
