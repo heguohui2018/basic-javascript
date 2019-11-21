@@ -30,3 +30,19 @@ var myNewObject3 = new myNewObjectType();
 var myNewObject4 = new myNewObjectType();
 
 
+// 构造函数参数
+
+function Person(personName) {
+	this.name = personName;
+	this.info = "I an called " + this.name;
+	this.showInfo = function() {
+		alert(this.info);
+	};
+}
+
+var person1 = new Person("heguohui");
+
+var person2 = new Person("heguohui");
+
+
+
