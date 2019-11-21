@@ -21,8 +21,3 @@ myNewObject.showInfo();
 
 
 
-
-
-
-
-
