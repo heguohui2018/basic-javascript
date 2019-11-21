@@ -10,3 +10,24 @@ function myNewObjectType() {
 		this.info = newInfo;
 	}
 }
+
+// 对象实例化
+// 创建的实例都具有 myNewObjectType函数所定义的方法
+var myNewObject = new myNewObjectType();
+
+// 调用属性和方法
+myNewObject.showInfo();
+myNewObject.setInfo("覆盖掉信息")
+
+
+// 创建多个实例
+var myNewObject1 = new myNewObjectType();
+
+var myNewObject2 = new myNewObjectType();
+
+var myNewObject3 = new myNewObjectType();
+
+var myNewObject4 = new myNewObjectType();
+
+
+
