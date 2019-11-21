@@ -30,4 +30,3 @@ var myNewObject3 = new myNewObjectType();
 var myNewObject4 = new myNewObjectType();
 
 
-
