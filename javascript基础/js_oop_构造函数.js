@@ -45,4 +45,18 @@ var person1 = new Person("heguohui");
 var person2 = new Person("heguohui");
 
 
+// 构造函数多个参数
+function Car(Color ,Year, Make, User) {
+	this.Color = Color;
+	this.Year = Year;
+	this.Make = Make;
+	this.User = User;
+	this.setOdometer = function(newUser) {
+		this.User = newUser;
+	}
+}
+var Car1 = new Car("red","2019","China","heguohui");
 
+var Caf1 = new Car("orange","2018","China","heguohui");
+
+var Caf1 = new Car("pink","2018","China","heguohui");
