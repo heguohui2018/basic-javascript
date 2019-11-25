@@ -46,13 +46,14 @@ var person2 = new Person("heguohui");
 
 
 // 构造函数多个参数
+// 创建一个汽车对象
 function Car(Color ,Year, Make, User) {
 	this.Color = Color;
 	this.Year = Year;
 	this.Make = Make;
 	this.User = User;
 	this.setOdometer = function(newUser) {
-		this.User = eewUser;
+		this.User = newUser;
 	};
 }
 var Car1 = new Car("red","2019","China","heguohui");
@@ -62,6 +63,16 @@ var Car2 = new Car("orange","2018","China","heguohui");
 var Car3 = new Car("pink","2018","China","heguohui");
 
 Car1.setOdometer("wang");
+
+// 创建酒店对象
+function Hotel (name,rooms,booked){
+	this.name = name;
+	this.rooms = rooms;
+	this.booked = booked;
+	this.checkAvailability = function () {
+		return this.rooms -this.booked;
+	}
+}
 
 
 
