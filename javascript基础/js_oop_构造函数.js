@@ -52,7 +52,7 @@ function Car(Color ,Year, Make, User) {
 	this.Make = Make;
 	this.User = User;
 	this.setOdometer = function(newUser) {
-		this.User = newUser;
+		this.User = eewUser;
 	};
 }
 var Car1 = new Car("red","2019","China","heguohui");
@@ -62,3 +62,16 @@ var Car2 = new Car("orange","2018","China","heguohui");
 var Car3 = new Car("pink","2018","China","heguohui");
 
 Car1.setOdometer("wang");
+
+
+
+// 对已进行实例化对象进行扩展
+// 通过使用关键字 prototype,来添加属性和方法
+Proson.prototype.sayHello = function() {
+	alert(this.name + "says helllo");
+}
+
+
+
+
+
