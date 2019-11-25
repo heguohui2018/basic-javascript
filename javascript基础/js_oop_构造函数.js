@@ -74,6 +74,8 @@ function Hotel (name,rooms,booked){
 	}
 }
 
+var quayHotel = new Hotel("Quay","40","20");
+var quayHotel = new Hotel("Park","40","20");
 
 
 // 对已进行实例化对象进行扩展
