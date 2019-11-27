@@ -85,6 +85,14 @@ Proson.prototype.sayHello = function() {
 }
 
 
+function User(name) {
+	this.name = name;
+	this.amdin = true;
+}
+
+let user = new User("Jack");
+alert(user.name);
+alert(user.amdin);
 
 
 

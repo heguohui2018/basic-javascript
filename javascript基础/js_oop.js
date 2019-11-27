@@ -20,4 +20,21 @@ myNewObject.showInfo();
 // 当把定义的函数赋给方法后，this指代的对象就变成了 myNewObject
 
 
-
+// 字面量方法创建对象
+var person = {
+	name : ['Bob','Smith'],
+	age : 32,
+	gender :'male',
+	interstates : ['music','sport'],
+	bio : function () {
+		alert(this.name[0]+''+this.name[1]+'is'+this.age+'years ols .He likes');
+	},
+	greeting : function () {
+		alert('Hi! I\'m'+this.name[0]+'.');
+	}
+}
+person.name[0]
+person.age
+person.interstates[1]
+person.bio()
+person.greeting()
