@@ -16,16 +16,16 @@
 		let odel=document.getElementById("del");
 		let obox=document.getElementById("box");
 		oadd.onclick=function(){
-		var odiv=document.createElement("div");
-		obox.appendChild(odiv);
-		}
+			var odiv=document.createElement("div");
+			obox.appendChild(odiv);
+			}
 		odel.onclick=function(){
-		var divs=obox.getElementsByTagName("div");
-		if(divs.length>0){
-		obox.removeChild(divs[0]);
+			var divs=obox.getElementsByTagName("div");
+			if(divs.length>0){
+				obox.removeChild(divs[0]);
+				}
 			}
 		}
-	}
 	</script>
 </head>
 <body>
