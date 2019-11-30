@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		div {
+			width: 200px;
+			height: 20px;
+			background-color: yellow;
+		}
+	</style>
+	<script>
+	window.onload=function(){
+		let oadd=document.getElementById("add");
+		let odel=document.getElementById("del");
+		let obox=document.getElementById("box");
+		oadd.onclick=function(){
+		var odiv=document.createElement("div");
+		obox.appendChild(odiv);
+		}
+		odel.onclick=function(){
+		var divs=obox.getElementsByTagName("div");
+		if(divs.length>0){
+		obox.removeChild(divs[0]);
+			}
+		}
+	}
+	</script>
+</head>
+<body>
+	<div id="box"></div>
+	<input type="button" id="add" value="添加元素">
+	<input type="button" id="del" value="删除元素">
+</body>
+</html>
