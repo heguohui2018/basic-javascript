@@ -37,8 +37,39 @@
 		#ul1 li:hover {
 			background-color: green;
 		}
+
+		#ul1 .ul2 {
+			display: none;
+			position: relative;
+			width: 100px;
+		}
+		#ul1 .ul2 li {
+			background: gold;
+			position: relative;
+		}
+		#ul1 .ul2 li:hover {
+			background: #f60;
+		}
+		#ul1 .ul2 .ul3 li:hover {
+			background: skyblue;
+		}
+		#ul1 .ul2 .ul3 li {
+			background: seagreen;
+		}
+		#ul1 .ul2 .ul3 {
+			position: absolute;
+			left: 98px;
+			top: 0px;
+			display: none;
+			width: 100px;
+			height: 90px;
+		}
 	</style>
 	<script>
+		window.onload = function(){
+			
+		}
+
 	</script>
 </head>
 <body>
