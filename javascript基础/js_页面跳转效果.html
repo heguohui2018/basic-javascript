@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		function countDown(secs,surl){
+			var jumpto = document.getElementById("jumpto");
+			jumpto.innerHTML = secs;
+			if ((secs--)>0){
+				setTimeout("countDown("+secs+",)")
+			}
+		}
+	</script>
+</head>
+<body>
+	<p id="jumpto">10s后自动跳转到http://www.baidu.com</p>
+</body>
+</html>
