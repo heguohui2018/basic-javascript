@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		.bg {
+			background-color: pink;
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			let inputs = document.getElementsByTagName("input");
+			for(let i =0;i<inputs.length;i++){
+				inputs[i].onfocus = function(){
+					this.className = "bg";
+				}
+				inputs[i].onblur = function(){
+					this.className ="";
+				}
+			}
+		}
+
+	</script>
+</head>
+<body>
+	<form id="muform" action="#">
+		<ul>
+			<li>用户名:<input type="text" name="username"></li>
+			<li>密码:<input type="text" name="password"></li>
+		</ul>
+	</form>
+</body>
+</html>
