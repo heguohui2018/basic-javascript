@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script>
+		window.onload = function(){
+			let runTime = document.getElementById("runtime");
+			console.time("代码运行时间");
+			for(let i = 0;i<10;i++){
+				runTime.innerHTML += "A";
+			}
+			console.timeEnd("代码运行时间");
+		}
+	</script>
+</head>
+<body>
+	<div id="runtime"></div>
+</body>
+</html>
