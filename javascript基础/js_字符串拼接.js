@@ -33,13 +33,24 @@ if (username.toUpperCase() == "hEGUOHUI"){
 	alert("not");
 }
 
+// 正向查找字串
 let parentString = "This is cookbook's test script";
 let subString = "cookbook";
 let indexString = parentString.indexOf(subString);
 console.log(indexString);
 
-
 let parentString = "This is cookbook's test script";
 let subString = "cookbook";
 let indexString = parentString.indexOf(subString,5);
+console.log(indexString);
+
+// 反向查找字串
+let parentString = "This is cookbook's test script";
+let subString = "cookbook";
+let indexString = parentString.lastIndexOf(subString);
+console.log(indexString);
+
+let parentString = "This is cookbook's test script";
+let subString = "cookbook";
+let indexString = parentString.lastIndexOf(subString,5);
 console.log(indexString);
