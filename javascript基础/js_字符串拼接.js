@@ -25,3 +25,21 @@ if (username == "heguohui"){
 }else{
 	prompt("This isn't my name");
 }
+
+let username = prompt("Your name is ","");
+if (username.toUpperCase() == "hEGUOHUI"){
+	alert("This is my name");
+}else{
+	alert("not");
+}
+
+let parentString = "This is cookbook's test script";
+let subString = "cookbook";
+let indexString = parentString.indexOf(subString);
+console.log(indexString);
+
+
+let parentString = "This is cookbook's test script";
+let subString = "cookbook";
+let indexString = parentString.indexOf(subString,5);
+console.log(indexString);
