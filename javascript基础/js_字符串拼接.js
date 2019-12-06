@@ -18,3 +18,10 @@ if (strName == "Shelley"){
 }else{
 	alert("Your name isn't Shelley.Bummer.");
 }
+
+let username = prompt("Your name is"," ");
+if (username == "heguohui"){
+	prompt("This is my name");
+}else{
+	prompt("This isn't my name");
+}
