@@ -54,3 +54,27 @@ let parentString = "This is cookbook's test script";
 let subString = "cookbook";
 let indexString = parentString.lastIndexOf(subString,5);
 console.log(indexString);
+
+
+// 从字符串提取子串
+
+let parentString = "This is cookbook .test script.This is a list of item:cookbook,book,cook.";
+// let subString = "cookbook";
+let start = parentString.indexOf(":");
+let end = parentString.indexOf(".",start+1);
+let list = parentString.substring(start+1,end);
+console.log(list);
+
+let signString = list.split(",");
+console.log(signString);
+
+
+
+
+
+
+
+
+
+
+
