@@ -20,3 +20,16 @@ number.unshift(-2);
 number.unshift(-4,-5);
 number.unshift(-5,-6,-7);
 console.log(number);
+
+// 数组中删除元素,删除最后一个元素
+number.pop();
+console.log(number);
+
+// 删除数组的第一个元素
+number.shift();
+console.log(number);
+
+// 通过索引删除指定位置的元素
+// 第一个参数为起始索引值，后面一个为需要删除的元素个数
+number.splice(5,3)
+console.log(number);
