@@ -63,13 +63,17 @@ function printMatrix(myMatrix) {
 		for(let j =0;j<myMatrix.length[i];j++){
 			console.log(myMatrix[i][j]);
 		}
-j}
+	}
 }
 printMatrix(averageTemp);
 
 
-
-
+// 数组合并
+let zero = 0;
+let oneArray = [1,2,3];;
+let twoArray = [-1,2,3];
+let newArray = oneArray.concat(zero,twoArray);
+console.log(newArray);
 
 
 
