@@ -20,3 +20,15 @@ function showMessage() {
 	alert(message);
 }
 showMessage();
+
+
+let userName = "jhon";
+// 这是一个外部变量
+function showMessage() {
+	let userName = "Bob"
+	let message = "hello" + userName;
+	alert(message);
+}
+showMessage();
+// 当内部变量与外部变量同名是，内部变量会覆盖外部变量，
+
