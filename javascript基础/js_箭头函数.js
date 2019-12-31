@@ -23,3 +23,36 @@ alert(clac());
 // 	return n*2;
 // }
 // alert(clac(3));
+
+
+// 没有参数，括号也需要保留
+let sayHi = () =>alert("Hello!");
+sayHi();
+
+
+// 用箭头函数重写这个函数表达式
+function ask(question,yes,no) {
+	if (confirm(question))yes()
+	else no();
+}
+
+ask(
+	"Do you argree",
+	function() {
+		alert("you agreed.");
+	},
+	function() {
+		alert("You canceled the execution");
+	}
+);
+
+// 用箭头函数重写之后
+function ask(question,yes,no) {
+	if (confirm(question))yes()
+	else no();
+}
+ask(
+	"Do you argree",
+	() => alert("you agreed."),
+	() =>alert("You canceled the execution")
+);
