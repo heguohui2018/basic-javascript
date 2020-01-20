@@ -30,8 +30,8 @@ let number3 = [0,1,2,3,4,5,6,7,8,9];
 number3.push(13,14,15);
 console.log('number3 ='+ number3);
 
-let number4 = [0,1,2,3,4,5,6,7,8,9];
 // 在数组开头添加新元素
+let number4 = [0,1,2,3,4,5,6,7,8,9];
 number4.unshift(-2);
 console.log('number4 =' + number4);
 
@@ -54,6 +54,7 @@ number8.shift();
 console.log('number8 =' + number8);
 
 // 通过索引删除指定位置的元素
+//
 // 第一个参数为起始索引值，后面一个为需要删除的元素个数
 let number9 = [0,1,2,3,4,5,6,7,9,9];
 number9.splice(5,3)
@@ -87,24 +88,28 @@ console.log(averageTemp);
 console.log(averageTemp.length);
 console.log(averageTemp[0][3]);
 
-// 2*2矩阵
-// function printMatrix(myMatrix) {
-// 	for(let i = 0;i<myMatrix.length;i++){
-// 		for(let j =0;j<myMatrix.length[i];j++){
-// 			console.log(myMatrix[i][j]);
-// 		}
-// 	}
-// }
-// printMatrix(averageTemp);
+// 斐波那契数列
+// 斐波那契数列的从第三项开始每一项等于前两项之和
+let fibonaci = [];
+fibonaci[1] = 1;
+fibonaci[2] = 2;
+for (var i = 3; i < 29; i++) {
+	fibonaci[i] = fibonaci[i-1]+fibonaci[i-2];
+}
+for (var i = 1; i < fibonaci.length; i++) {
+	console.log(fibonaci[i]);
+}
 
 
-// // 数组合并
-// let zero = 0;
-// let oneArray = [1,2,3];;
-// let twoArray = [-1,2,3];
-// let newArray = oneArray.concat(zero,twoArray);
-// console.log(newArray);
-
+let fibonaci_one = [];
+fibonaci_one[1] = 1;
+fibonaci_one[2] = 2;
+for (let i = 3;  i < 30; i++) {
+	fibonaci_one[i] = fibonaci_one[i-1] + fibonaci_one[i-2];
+}
+for (var i = 1; i < fibonaci_one.length; i++) {
+	console.log(fibonaci_one[i]);
+}
 
 
 
